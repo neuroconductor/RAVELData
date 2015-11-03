@@ -1,0 +1,10 @@
+Package: RAVELData
+Version: 0.99.0
+Title: Example dataset of input data for RAVEL
+Description: Processed data from KIRBY21 dataset
+Author: Jean-Philippe Fortin, Russell T. Shinohara
+Maintainer: Jean-Philippe Fortin <fortin946@gmail.com>
+License: GPL-2
+LazyData: yes
+
+
