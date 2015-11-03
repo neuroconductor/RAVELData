@@ -29,7 +29,7 @@ scans_n4_reg_brain <- pblapply(scans_n4_reg, function(x){
 # Writing out the processed images:
 pblapply(1:4, function(j){
 	antsImageWrite(scans_n4_reg_brain[[j]], 
-		paste0("../processed/scan",j,"_processed.nii.gz"))
+		paste0("../data/scan",j,"_processed.nii.gz"))
 })
 
 
