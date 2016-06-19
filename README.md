@@ -1,2 +1,2 @@
-# RAVEL_data
-Data package for RAVEL
+# RAVELData
+Data example package for package RAVEL
