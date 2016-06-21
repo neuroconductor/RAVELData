@@ -1,5 +1,5 @@
 # RAVELData
-### Data example package for the imaging suite R package [`RAVEL`](https://github.com/Jfortin1/RAVEL)
+### Data example package for the R package [`RAVEL`](https://github.com/Jfortin1/RAVEL)
 --------
 
 **Creator**: Jean-Philippe Fortin, jeanphi@mail.med.upenn.edu
