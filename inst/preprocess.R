@@ -44,8 +44,8 @@ segs_csf <- pblapply(segs, function(x){
 	x
 })
 
-pblapply(1:4, function(j){writeNIfTI(segs[[j]], paste0("../data/scan",j,"_seg.nii.gz"))})
-pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../data/scan",j,"_csf_mask.nii.gz"))})
+pblapply(1:4, function(j){writeNIfTI(segs[[j]], paste0("../inst/extdata/scan",j,"_seg.nii.gz"))})
+pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../inst/extdata/scan",j,"_csf_mask.nii.gz"))})
 
 
 
@@ -61,8 +61,8 @@ segs_csf <- pblapply(segs, function(x){
   x
 })
 
-pblapply(1:4, function(j){writeNIfTI(segs[[j]], paste0("../data/scan",j,"_seg.nii.gz"))})
-pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../data/scan",j,"_csf_mask.nii.gz"))})
+pblapply(1:4, function(j){writeNIfTI(segs[[j]], paste0("../inst/extdata/scan",j,"_seg.nii.gz"))})
+pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../inst/extdata/scan",j,"_csf_mask.nii.gz"))})
 
 
 pdf("try.pdf", width=5, height=5)
