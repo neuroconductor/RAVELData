@@ -2,9 +2,9 @@
 ### Data example package for the R package [`RAVEL`](https://github.com/Jfortin1/RAVEL)
 --------
 
-**Creator**: Jean-Philippe Fortin, jeanphi@mail.med.upenn.edu
+**Creator**: Jean-Philippe Fortin, fortin946@gmail.com
 
-**Authors**: Jean-Philippe Fortin, John Muschelli, Russell T. Shinohara
+**Authors**: Jean-Philippe Fortin, John Muschelli
 
 ##### Software status
 
