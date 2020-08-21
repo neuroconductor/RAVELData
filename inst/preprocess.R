@@ -1,10 +1,10 @@
-library(kirby21.scan.1)
-library(pbapply)
+library(RAVEL)
+library(EveTemplate)
 library(ANTsR)
 library(extrantsr)
 library(fslr)
-library(RAVEL)
-library(EveTemplate)
+library(kirby21.scan.1)
+library(pbapply)
 
 # Getting EveTemplate data first:
 template   <- antsImageRead(EveTemplate::getEvePath(),3) # Eve template:
