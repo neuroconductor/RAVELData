@@ -3,6 +3,7 @@ library(pbapply)
 library(ANTsR)
 library(extrantsr)
 library(fslr)
+library(RAVEL)
 
 
 kirbyDir  <- system.file(package = "kirby21.scan.1")
@@ -65,9 +66,16 @@ pblapply(1:4, function(j){writeNIfTI(segs[[j]], paste0("../inst/extdata/scan",j,
 pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../inst/extdata/scan",j,"_csf_mask.nii.gz"))})
 
 
-pdf("try.pdf", width=5, height=5)
-multi_overlay(scans_n4_reg_brain)
-dev.off()
+#Let's create the mask intersect:
+masks <- list.files("extdata", full.names=TRUE)
+masks <- masks[grepl("mask",masks)]
+output.file <- "extdata/csf_mask_intersection.nii.gz"
+mask <- maskIntersect(masks, output.file=output.file)
+
+
+#pdf("try.pdf", width=5, height=5)
+#multi_overlay(scans_n4_reg_brain)
+#dev.off()
 
 
 # files <- list.files("../data/", pattern="processed.nii.gz", full.names=TRUE)
