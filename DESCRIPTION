@@ -1,8 +1,8 @@
 Package: RAVELData
-Version: 1.0.0
-Title: Example dataset of input data for RAVEL
+Version: 1.0.1
+Title: Example dataset of input data for RAVEL (4 scans)
 Description: Processed data from KIRBY21 dataset.
-Author: Jean-Philippe Fortin, Russell T. Shinohara
+Author: Jean-Philippe Fortin
 Maintainer: Jean-Philippe Fortin <fortin946@gmail.com>
 License: GPL-2
 
