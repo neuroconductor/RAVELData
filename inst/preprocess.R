@@ -67,10 +67,11 @@ pblapply(1:4, function(j){writeNIfTI(segs_csf[[j]], paste0("../inst/extdata/scan
 
 
 #Let's create the mask intersect:
-masks <- list.files("extdata", full.names=TRUE)
-masks <- masks[grepl("mask",masks)]
+dir <- file.path(find.package("RAVELData"), "extdata")
+masks <- list.files(dir, full.names=TRUE, pattern="*mask*.nii*")
 output.file <- "extdata/csf_mask_intersection.nii.gz"
 mask <- maskIntersect(masks, output.file=output.file)
+
 
 
 #pdf("try.pdf", width=5, height=5)
